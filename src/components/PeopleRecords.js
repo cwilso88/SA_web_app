@@ -16,8 +16,8 @@ const PeopleRecords = props => {
         ) 
     });
     return (
-        <div>
-            
+        <div className= "ui container">
+            <h1>List of People</h1>
         </div>
     )
 }
