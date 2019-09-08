@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-class PeopleRecords extends Component {
-    render() {
-        return (
-            <div>
-                PeopleRecords
-            </div>
-        )
-    }
+const PeopleRecords = props => {
+    
+    return (
+        <div>
+            
+        </div>
+    )
 }
 
 export default PeopleRecords;
