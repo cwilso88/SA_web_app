@@ -1,5 +1,5 @@
 import React from 'react';
-import api from '../api/api';
+import {getPeopleRecords} from '../api/api';
 
 
 class PeopleRecords extends React.Component {
@@ -8,7 +8,7 @@ class PeopleRecords extends React.Component {
     }
 
     componentDidMount() {
-        api.get('/v2/people.json')
+        getPeopleRecords.get('/v2/people.json')
             .then(response => { console.log(response.data)})
     }
 

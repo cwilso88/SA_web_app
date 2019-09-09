@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 const Menu = () => {
     return (
         <div className="ui menu">
-            <Link> className="item">Browse</Link>
-            <Link className="item">Submit</Link>
-            <Link className="right menu">
-                <Link className="item">Sign Up</Link>
-                <Link className="item">Help</Link>
-            </Link>
+            <li className="item">Browse</li>
+            <li className="item">Submit</li>
+            <ul className="right menu">
+                <li className="item">Sign Up</li>
+                <li className="item">Help</li>
+            </ul>
         </div>
     )
 }
