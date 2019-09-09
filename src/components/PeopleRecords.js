@@ -9,7 +9,7 @@ class PeopleRecords extends React.Component {
 
     componentDidMount() {
         api.get('/v2/people.json')
-            .then(response => { console.log(response);})
+            .then(response => { console.log(response.data)})
     }
 
    
@@ -33,7 +33,7 @@ class PeopleRecords extends React.Component {
         return (
             <div className= "ui container">
                 <h1>List of People</h1>
-                
+                {this.peopleRecordsList}
             </div>
         )
     }
