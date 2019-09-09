@@ -14,7 +14,7 @@ class App extends React.Component {
       <div className="App">
             <Menu />
             <Header />
-            <PeopleRecords records={this.onFetchPeopleRecords} people={this.state.people}/>
+            <PeopleRecords />
             <CharCountButton />
         </div>
       )

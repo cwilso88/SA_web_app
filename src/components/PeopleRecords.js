@@ -8,12 +8,13 @@ class PeopleRecords extends React.Component {
     }
 
     componentDidMount() {
-        
+        api.get('/v2/people.json')
+            .then(response => { console.log(response);})
     }
 
    
 
-    const peopleRecordsList = this.state.people.map((person) => {
+    peopleRecordsList = this.state.people.map((person) => {
         return(
             <div className="card" key={person.id}>
                 <div className="content">
@@ -32,7 +33,7 @@ class PeopleRecords extends React.Component {
         return (
             <div className= "ui container">
                 <h1>List of People</h1>
-                {peopleRecordsList}
+                
             </div>
         )
     }
