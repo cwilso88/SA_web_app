@@ -1,7 +1,19 @@
 import React from 'react';
+import api from '../api/api';
 
-const PeopleRecords = props => {
-    const peopleRecordsList = props.people.map((person) => {
+
+class PeopleRecords extends React.Component {
+    state = {
+        people: []
+    }
+
+    componentDidMount() {
+        
+    }
+
+   
+
+    const peopleRecordsList = this.state.people.map((person) => {
         return(
             <div className="card" key={person.id}>
                 <div className="content">
@@ -15,12 +27,15 @@ const PeopleRecords = props => {
             </div>
         ) 
     });
-    return (
-        <div className= "ui container">
-            <h1>List of People</h1>
-            {peopleRecordsList}
-        </div>
-    )
+
+    render() {
+        return (
+            <div className= "ui container">
+                <h1>List of People</h1>
+                {peopleRecordsList}
+            </div>
+        )
+    }
 }
 
 export default PeopleRecords;
